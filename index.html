@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Welcome to Eazy Shipping site</h1>
+
+    <div class="container">
+        <p>Subscribe to our page!</p>
+        <button onclick="subscribe()" class="js-button subscribe-button">Subscribe</button>
+    </div>
+
+    <h4>Shipping Goods Price</h4>
+    
+    <p>$10 shipping fee for Order's below $40.</p>
+    
+    <p>FREE shipping for order's above $40.</p>
+
+    <input type="text" placeholder="Cost of Order" class="js-inputCost inputCost" onkeydown="costKeydown(event)">
+    <button onclick="totalCost()" class="calculate-button">Calculate</button>
+    <p class="js-cost-price"></p>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
